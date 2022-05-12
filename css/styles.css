@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
 :root {
-    --white: hsl(60, 12%, 97%);
+    --white: #f8f8f6;
     --light-grey: hsl(51, 13%, 78%);
+    --blue: hsl(203, 100%, 28%);
     --dark-blue: hsl(226, 67%, 18%);
     --black: hsl(240, 4%, 9%); 
 }
@@ -24,12 +25,20 @@ html {
 }
 
 p {
-    margin-top: 1em;
+    padding: 1rem;
+}
+
+
+h1 {
+    color: var(--dark-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
 }
 
 .flex {
     display: flex;
-    gap: var(--gap, 1rem);
+    gap: var(--gap, 2rem);
 }
 
 /* header */
@@ -44,14 +53,22 @@ p {
 
 .primary-navigation {
     list-style: none;
-    background-color: hsl(51, 13%, 95%);
+    background-color: var(--blue);
 }
 
 .primary-navigation a {
     text-decoration: none;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
 }
 
 /* media queries */
+
+@media (max-width: 75em) {
+    .primary-navigation a {
+        font-size: 1rem;
+    }
 
 @media (max-width: 45em) {
     .primary-navigation {
@@ -59,10 +76,24 @@ p {
         position: fixed;
         inset: 0 0 0 30%;
         flex-direction: column;
-        padding: min(20vh, 10rem) 2em;
+        padding: min(30vh, 15rem) 2em;
         z-index: 1000;
     }
 
+    h1 {
+        position: relative;
+        z-index: 1001;
+        margin-top: 50%; 
+        margin-left: 10%; 
+        transform: translate(-35%, -50%);
+        color: var(--white);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .primary-navigation a {
+        font-size: 1.5rem;
+    }
     .nav-toggle {
         position: absolute;
         top: 2rem;
@@ -74,4 +105,5 @@ p {
         z-index: 9999;
         /* display: none; */
     }
+
 }
