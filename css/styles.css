@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
 :root {
-    --white: #f8f8f6;
+    --white: rgb(248, 248, 246);
     --light-grey: hsl(51, 13%, 78%);
     --blue: hsl(203, 100%, 28%);
     --dark-blue: hsl(226, 67%, 18%);
@@ -54,6 +54,8 @@ h1 {
 .primary-navigation {
     list-style: none;
     background-color: var(--blue);
+    margin-right: 1rem;
+    padding: .5rem;
 }
 
 .primary-navigation a {
@@ -63,33 +65,73 @@ h1 {
     font-size: 1.5rem;
 }
 
+.welcome {
+    background-image: url("../assets/main_image3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+}
+
+.overlay {
+    background-color: rgba(248, 248, 246, 0.7);
+    margin: 0;
+    padding: 5rem;
+    width: 100%;
+}
+
+.section-title {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10002;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7rem;
+    color: var(--dark-blue);
+    outline:hsl(240, 4%, 9%);
+    text-align: center;
+}
+
+
 /* media queries */
 
-@media (max-width: 75em) {
+@media (max-width: 1470px) {
+    .section-title {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 1165px) {
     .primary-navigation a {
         font-size: 1rem;
     }
+    .section-title {
+        font-size: 85;
+    }
+}
 
-@media (max-width: 45em) {
+@media (max-width: 1010px) {
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 35em) {
     .primary-navigation {
         --gap: 2em;
         position: fixed;
-        inset: 0 0 0 30%;
+        inset: 0 0 0 40%;
         flex-direction: column;
         padding: min(30vh, 15rem) 2em;
         z-index: 1000;
+        background:hsla(226, 67%, 18%, .3);
+        backdrop-filter: blur(1rem);
     }
 
-    h1 {
-        position: relative;
-        z-index: 1001;
-        margin-top: 50%; 
-        margin-left: 10%; 
-        transform: translate(-35%, -50%);
-        color: var(--white);
-        font-size: 1.5rem;
-        text-align: center;
-    }
 
     .primary-navigation a {
         font-size: 1.5rem;
@@ -105,5 +147,7 @@ h1 {
         z-index: 9999;
         /* display: none; */
     }
-
+    .section-title {
+        font-size: 3vw;
+    }
 }
