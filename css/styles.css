@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
 :root {
-    --white: rgb(248, 248, 246);
-    --light-grey: hsl(51, 13%, 78%);
+    --white: rgb(252, 249, 239);
+    --light-grey: hsl(51, 8%, 82%);
+    --dark-grey: hsl(60, 1%, 21%);
     --blue: hsl(203, 100%, 28%);
     --dark-blue: hsl(226, 67%, 18%);
     --black: hsl(240, 4%, 9%); 
@@ -20,6 +21,10 @@ html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: var(--white);
     font-family: 'Arvo', serif;
     color: var(--black);
 }
@@ -28,126 +33,261 @@ p {
     padding: 1rem;
 }
 
+a,
+a:hover {
+    text-decoration: none;
+}
 
 h1 {
     color: var(--dark-blue);
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    font-weight: 800;
-}
-
-.flex {
-    display: flex;
-    gap: var(--gap, 2rem);
+    font-size: 7vh;
 }
 
 /* header */
-.logo {
-    margin: 1rem;
-}
-
-.primary-header {
+.top-bar {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.primary-navigation {
-    list-style: none;
+    padding: 1rem 3rem;
     background-color: var(--blue);
-    margin-right: 1rem;
-    padding: .5rem;
-}
-
-.primary-navigation a {
-    text-decoration: none;
     color: var(--white);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
 }
 
+.top-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li {
+    margin: 0 1rem;
+}
+
+.top-bar a {
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.top-bar a:hover {
+    color: var(--light-grey);
+}
+
+nav {
+    background-color: var(--white);
+    padding: 1.5rem 3rem;
+}
+
+nav a {
+    color: var(--black);
+    font-size: 1.15rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+.logo {
+
+}
+
+.logo img {
+    width: 7rem;
+}
+
+/* Mobile Menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+}
+.menu li {
+    padding: 1rem;
+}
+
+.menu li a {
+    display: block;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.bars {
+    background: var(--dark-blue);
+    display: inline-block;
+    height: .15rem;
+    width: 2rem;
+    position: relative;
+}
+
+.bars::before,.bars::after {
+    content: "";
+    background: var(--dark-blue);
+    display: inline-block;
+    height: .15rem;
+    width: 2rem;
+    position: absolute;
+}
+
+.bars::before {
+    top: .5rem;
+}
+
+.bars::after {
+    top: -.5rem;
+}
+
+.button.secondary {
+    border-bottom: 1px #444 solid;
+}
+
+.nav-toggle {
+    font-size: 1.6rem;
+    color: var(--black);
+    border: none;
+    display: none;
+}
+
+
+/* welcome section */
 .welcome {
     background-image: url("../assets/main_image3.png");
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 999;
+    padding: 0;
+    margin: 0;
 }
 
 .overlay {
-    background-color: rgba(248, 248, 246, 0.7);
+    background-color: rgba(252, 249, 239, 0.1);
     margin: 0;
-    padding: 5rem;
+    padding: 2rem;
     width: 100%;
 }
 
 .section-title {
     width: 100%;
     margin: 0 auto;
-    z-index: 10002;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 7rem;
-    color: var(--dark-blue);
-    outline:hsl(240, 4%, 9%);
+    padding: .5rem;
     text-align: center;
+    background-color: rgba(252, 249, 239, 0.6);
+    box-shadow: 5px 5px 15px var(--black);
 }
 
+.covered {
+    color: var(--blue);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 3rem 0 0 0;
+}
+
+.action {
+    color: var(--dark-grey);
+    font-weight: 800;
+    text-align: center;
+    padding: .5 0 2rem 0;
+}
+
+.quote {
+    color: var(--blue);
+    font-style: italic;
+}
+
+.quote:hover {
+    color: var(--black);
+}
 
 /* media queries */
 
-@media (max-width: 1470px) {
-    .section-title {
-        font-size: 6vw;
-    }
-}
+/* Tablet Menu */
 
-@media (max-width: 1165px) {
-    .primary-navigation a {
-        font-size: 1rem;
-    }
-    .section-title {
-        font-size: 85;
-    }
-}
-
-@media (max-width: 1010px) {
-    .section-title {
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 850px) {
-    .section-title {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 35em) {
-    .primary-navigation {
-        --gap: 2em;
-        position: fixed;
-        inset: 0 0 0 40%;
-        flex-direction: column;
-        padding: min(30vh, 15rem) 2em;
-        z-index: 1000;
-        background:hsla(226, 67%, 18%, .3);
-        backdrop-filter: blur(1rem);
+@media all and (min-width: 45em) {
+    .menu {
+        justify-content: center;
     }
 
-
-    .primary-navigation a {
-        font-size: 1.5rem;
+    .logo {
+        flex:1;
     }
-    .nav-toggle {
-        position: absolute;
-        top: 2rem;
-        right: 2rem; 
-        width: 1rem;
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button.secondary {
+        border: 0;
+ 
+    }
+
+    .button a {
+        padding: .5rem .7rem;
         background: var(--dark-blue);
-        aspect-ratio: 1;
-        cursor: pointer;
-        z-index: 9999;
-        /* display: none; */
+        color: var(--white);
+        border: 1px solid var(--blue);
+        border-radius: 50em;
     }
-    .section-title {
-        font-size: 3vw;
+
+    .button a:hover {
+        color: var(--white);
+        background-color: var(--blue);
+        transition: all ease-in-out .30s;
+    }
+
+    .button.secondary a {
+        background: transparent;
+        color: var(--black);
+    }
+
+    .button.secondary a:hover {
+        color: var(--black);
+        background-color: var(--light-grey);
+    }
+}
+
+/* Desktop and larger */
+
+@media all and (min-width: 75em) {
+    
+    .item {
+        display: block;
+        width: auto;
+        order: 1;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 1.8rem 2rem;
     }
 }
