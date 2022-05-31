@@ -15,21 +15,25 @@
             <ul>
                 <li><a href="https://www.facebook.com/jminsurancegroup">
                     <i class="fa-brands fa-facebook" alt="facebook"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/maddisonrobinette/">
+                <li><a href="https://www.linkedin.com/company/jminsurancebillings/">
                     <i class="fa-brands fa-linkedin" alt="linked in"></i></a></li>
             </ul>
         </div>
 
         <nav>            
-            <ul id="primary-navigation" class="menu">
+            <ul id="primary-navigation" data-visible="false" class="menu flex">
+                <button class="hamburger" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <!-- Open and Close Icons -->
+                    <span class="menuIcon"></span>
+                    <i class="closeIcon fa-solid fa-xmark-large"></i>
+                </button>
                 <li class="logo"><a href="#"><img src="assets/logo_transparent_sm.png" alt="jm insurance logo"></a></li>
-                <li class="item"><a href="#home">Home</a></li>
-                <li class="item"><a href="#about">About Us</a></li>
-                <li class="item"><a href="#news">News</a></li>
-                <li class="item button"><a href="#request">Quote</a></li>
-                <li class="item button secondary"><a href="#contact">Contact</a></li>
-                <li class="toggle"><span class="bars"></span><span class="sr-only">Menu</span></li>
-            </ul>
+                <li class="menuItem"><a href="#home">Home</a></li>
+                <li class="menuItem"><a href="#about">About Us</a></li>
+                <li class="menuItem"><a href="#news">News</a></li>
+                <li class="menuItem button"><a href="#request">Quote</a></li>
+                <li class="menuItem button secondary"><a href="#contact">Contact</a></li>
         </nav>
     </header>
     
