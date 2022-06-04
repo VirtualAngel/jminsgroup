@@ -1,27 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/ef50a20b52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>JM Insurance Group</title>
-</head>
-<body>
-    <header class="primary-header">
-        <div>
-            <img src="assets/transparent_logo_sm.png" class="logo" alt="JM Insurance logo">
-        </div>
-        <nav>
-            <ul id="primary-navigation" class="primary-navigation flex">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#legal">Legal Shield</a></li>
-                <li><a href="#request">Request Quote</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+        <div class="top-bar">
+            <span><i class="fa-solid fa-phone"></i><a href="tel:4065378008"> 406-534-8008</a></span>
+            <ul>
+                <li><a href="https://www.facebook.com/jminsurancegroup">
+                    <i class="fa-brands fa-facebook" alt="facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/jminsurancebillings/">
+                    <i class="fa-brands fa-linkedin" alt="linked in"></i></a></li>
             </ul>
-        </nav>
-    </header>
-</body>
-<script src="js/scripts.js"></script>
+        </div>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="#"><img src="assets/transparent_logo_sm.png" alt="jm insurance logo"></a>
+          <button class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#news">News</a>
+              </li>
+              <li class="nav-item button">
+                <a class="nav-link" href="#quote">Quote</a>
+              </li>
+              <li class="nav-item button secondary">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="welcome">
+            <div class="overlay">
+                <h1 class="section-title">Hello! <br> Welcome to <br> JM Insurance Group</h1>
+            </div>
+        </section>
+
+        <section class="about-agency">
+            <h2 class="covered">We've got you covered!</h2>
+
+            <p class="action">We are committed to great customer satisfaction. Stop by and visit, call us, or <a href="#request"><span class="quote">request a quote</span></a> today!</p>
+            <p>JM Insurance Group specializes in writing home, renters, landlord, auto, umbrella, motorcycles, ATV's boats or any other toys or unique items you may own. We have several types of personal insurance to cover all of your individual circumstances.</p>
+            <p>We are an independent agency that offers a full range of insurance products from several A rated or better companies. This means you don't have to change agencies as your insurance situations evolve.</p>
+            <p>Understanding insurance can be quite complicated and at JM Insurance Group we believe in explaining the options to you so you can make an educated decision on the route you would like to pursue. We encourage a face to face visit for the initial meeting to explain coverage and address any gaps in insurance you may have. We will do a periodic review every couple years since life happens and things change.</p>
+            <p>The companies we represent are great at handling claims. However, the claims experience can be confusing and we are here to help guide you throughout the process.</p>
+
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
