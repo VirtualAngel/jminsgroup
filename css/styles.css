@@ -228,41 +228,6 @@ h1 {
 
 /* Contact Section */
 
-section.contact-container {
-    background-color: var(--dark-grey);
-    color: var(--black);
-    text-align: center;
-}
-
-.contact-container h2 {
-    margin: .8rem 0;
-    font-size: 2rem;
-}
-
-.contact-container ul {
-    list-style-type: none;
-    padding: 0 .2rem 0 .2rem;
-    font-size: .8rem;
-    align-items: center;
-    line-height: 1.5rem;
- }
-
-.contact-container a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-.contact-container a:hover {
-    text-decoration: underline;
-    color: var(--light-grey);   
-}
-
-.contact-container a:focus {
-    text-decoration: underline;
-    color: var(--light-grey);
-}
-
-
 /* Footer Section */
 footer {
     background-color: var(--blue);
@@ -384,7 +349,7 @@ footer {
     section.contact-container {
         flex-direction: column;
         padding-left: 2rem;
-        gap: 1rem;
+        gap: .8rem;
     }
 
     .footer-container {
