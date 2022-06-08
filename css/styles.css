@@ -14,25 +14,43 @@
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 *,
-html {
-    box-sizing: border-box;
+body,
+h1,
+h2,
+h3,
+p {
     padding: 0;
     margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
 }
 
 body {
     background-color: var(--white);
     font-family: 'Arvo', serif;
     color: var(--black);
+    line-height: 1.6rem;
 }
 
 p {
     margin-inline: 1.3rem;
     font-size: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 a,
@@ -44,6 +62,19 @@ h1 {
     color: var(--dark-blue);
     font-family: 'Montserrat', sans-serif;
     font-size: 7vh;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+    max-width: 35rem;
 }
 
 /* header */
@@ -174,8 +205,6 @@ h1 {
     background-image: url("../assets/main_image3.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0;
-    margin: 0;
 }
 
 .overlay {
@@ -190,7 +219,7 @@ h1 {
 
 .greeting {
     width: 100%;
-    margin: 0 auto;
+    margin-inline: 0 auto;
     padding: .5rem;
     color: var(--dark-blue);
     text-align: center;
@@ -202,7 +231,7 @@ h1 {
     color: var(--blue);
     font-size: 2.5rem;
     text-align: center;
-    padding: 2rem 0 0 0 ;
+    margin-inline: 2rem ;
 }
 
 .action-statement {
@@ -232,6 +261,11 @@ h1 {
     font-style: italic;
 }
 
+.community-news {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
 /* Footer & Contact Section */
 footer {
     background-color: var(--blue);
@@ -246,14 +280,6 @@ footer {
     font-size: 1rem;
     gap: 10rem;
     padding: 1rem .5rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    min-height: 100%;
-}
-
-.footer-container h3 {
-    margin: .8rem 0;
-    font-size: 1.2rem;
 }
 
 .footer-container ul {
