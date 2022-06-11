@@ -31,7 +31,6 @@ p {
 body {
     font-family: var(--ff-primary);
     font-weight: 400;
-    font-size: 1.3125rem;
     line-height: .7rem;
 }
 
@@ -44,15 +43,20 @@ section {
 h1,
 h2,
 h3 {
-    color: var(--blue);
     font-family: var(--ff-accent);
-    font-weight: 600;
     line-height: 1.5rem;
     margin-bottom: 1em;
 }
 
+.welcome h1 {
+    color: var(--dark-blue);
+    font-size: 2.5rem;
+}
 
-h2 {
+.bg-creamy-white h2,
+.bg-grey h2 {
+    color: var(--blue);
+    font-size: 2rem;
     padding: 4rem 0 2rem 0;
     text-decoration: underline .3rem rgb(22, 22, 24, 0.2);
 }
@@ -74,8 +78,6 @@ img {
 .container--narrow {
     max-width: 30rem;
 }
-
-
 
 .bg-creamy-white {
     background-color: var(--white);
@@ -242,9 +244,21 @@ img {
     box-shadow: 5px 5px 15px var(--black);
 }
 
+.catch-phrase {
+    color: var(--dark-blue);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: -2.5rem;
+    margin-inline: auto;
+}
+
 .request-quote {
     color: var(--blue);
     font-style: italic;
+}
+
+.truck-mascot {
+    background-color: var(--blue);
 }
 
 /* Footer */
@@ -254,7 +268,7 @@ img {
     border-top: .1rem solid var(--dark-blue);
     background-color: var(--white);
     color: var(--black);
-
+}
 
 /* media queries */
 
@@ -269,7 +283,7 @@ img {
 
 /* Mobile/Small screens */
 
-@media all and (max-width: 40em) {
+@media all and (min-width: 40em) {
     .split {
         flex-direction: row;
     }
