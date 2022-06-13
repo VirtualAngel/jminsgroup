@@ -59,7 +59,7 @@
       
       <main>
         <section class="welcome text-center">
-            <div class="container container--narrow">
+            <div class="section-container container--narrow">
               <div class="overlay">
                   <h1 class="greeting">Hello!
                     <br>Welcome to JM Insurance Group
@@ -70,7 +70,7 @@
 
         <!-- About section -->
         <section id="about" class="bg-creamy-white">
-          <div class="container">
+          <div class="section-container">
             <h2 class="text-center">We've got you covered!</h2>
             <p class="text-center catch-phrase">We are committed to great customer satisfaction. Stop by and visit, call us, or <a href="#quote"><span class="request-quote">request a quote</span></a> today!</p>
             
@@ -89,7 +89,7 @@
 
         <!-- Meet us section -->
         <section id="meet" class="bg-grey">
-          <div class="container">
+          <div class="section-container">
             <h2 class="text-center">Meet our Team</h2>
             <div class="split">
               <div><img src="/assets/Employees/JenniferMassey.jpg" alt="picture of jennifer massey"></div>
@@ -103,7 +103,7 @@
           </div>
         </section>
         <section class="bg-creamy-white">
-          <div class="container">
+          <div class="section-container">
             <div class="split">
               <div><img src="/assets//Employees/Joni_Final_Photo.jpg" alt="photo of joni" width="230"></div>
               <div>
@@ -119,7 +119,7 @@
           </div>
         </section>
         <section class="bg-grey">
-          <div class="container">
+          <div class="section-container">
             <div class="split">
               <div><img src="assets/Employees/maddison.jpg" alt="photo of maddison" width="230"></div>
               <div>
@@ -134,7 +134,7 @@
           </div>
         </section>
         <section class="bg-creamy-white">
-          <div class="container">
+          <div class="section-container">
             <div class="split">
               <div><img src="assets/Employees/Azael_Headshot.png" alt="photo of azael" width="230"></div>
               <div>
@@ -149,13 +149,13 @@
         </section>
         <!-- Community and news section -->
         <section id="news" class="bg-grey">
-          <div class="container">
+          <div class="section-container">
             <h2 class="text-center">Community and News</h2>
               <p>Since JM Insurance open its doors in January of 2017, our major emphasis has been on community involvement. We are dedicated to helping through volunteering, collecting supplies for various programs and monetary donations. We help many charities with the focus on local charities in Montana. We are a small agency but have a big heart! If you would like to be involved or would like to participate in a donation of one of our charities please email, jennifer@jminsgroup.com or call at 406-534-8008.</p>
           </div>
         </section>
         <section class="bg-creamy-white">
-          <div class="container">
+          <div class="section-container">
             <div class="split">
               <div>
                 <h3>BILLINGS NEIGHBORHOOD WATCH HELPING THE HOMELESS DRIVE</h3>
@@ -169,7 +169,7 @@
           </div>
         </section>
         <section class="bg-grey">
-          <div class="container">
+          <div class="section-container">
             <div class="split">
               <div>
                 <img src="/assets/community/community2.png">
@@ -183,7 +183,7 @@
           </div>
         </section>
         <section class="bg-creamy-white">
-          <div class="container">
+          <div class="section-container">
             <div class="split">
               <div>
                 <h3>QUILT RAFFLE</h3>
@@ -209,7 +209,7 @@
           </div>
         </section>
         <section class="bg-creamy-white">
-          <div class="container">
+          <div class="">
             <div class="split">
               <div>
                 <h3>RELAY FOR LIFE</h3>
@@ -223,7 +223,7 @@
           </div>
         </section>
         <section class="bg-grey">
-          <div class="container">
+          <div class="section-container">
             <div class="split">
               <div>
                 <img src="/assets/community/community6.png">
@@ -237,7 +237,7 @@
           </div>
         </section>
         <section class="bg-creamy-white">
-          <div class="container">
+          <div class="section-container">
             <div class="split">
               <div>
                 <h3>ALZHEIMER’S ASSOCIATION</h3>
@@ -252,7 +252,7 @@
         </section>
         <!-- Quote Request -->
         <section id="quote" class="bg-grey">
-          <div class="container">
+          <div class="section-container">
             <h2 class="text-center">Request a Quote</h2>
             <form action="https://formsubmit.co/maddison@jminsgroup.com" method="POST">
               <!-- Blocker -->
@@ -285,7 +285,7 @@
                   </div>
 
                   <div class="split">
-                    <label for="phone">Phone number:</label>
+                    <label for="phone">Phone number (Required)</label>
                     <input type="tel" id="phone" name="Phone"
                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                            required>
@@ -294,7 +294,7 @@
                     <input type="email" id="email" name="Email" placeholder="Enter your email" required>
                     
                     <label for="preferred_contact">I preferred to be contacted by: (Required)</label>
-                    <select id="preferred_contact" name="Preferred_Contact_Method" required>
+                    <select id="preferred_contact" name="Preferred_Contact_Method">
                       <option value="Email">Email</option>
                       <option value="Phone">Phone</option>
                       <option value="Text">Text</option>
@@ -348,37 +348,38 @@
         </section>
 
         <section id="contact" class="bg-dark-blue">
-          <div class="container">
-            <div class="split">
-              <h2 class="text-center">Contact Us</h2>
-                <div>
+          <div class="container-contact">
+            <h2 class="text-center contact">Contact Us</h2>
+            <div class="split-contact">
+              <div class="address">
+                <h3 class="center">Address</h3>
+                  <ul>
+                    <li>JM Insurance Group</li>
+                    <li>111 Main Street, Suite 6</li>
+                    <li>Billings, MT 59105</li>
+                  </ul>
+                </div>
+
+                <div class="contact-info">
+                  <h3>Contact Information</h3>
                   <ul>
                     <li>
-                        <span><i class="fa-solid fa-phone"></i><a href="tel:4065348008"> 406-534-8008</a></span>
+                      <span><i class="fa-solid fa-phone contact-icons"></i><a href="tel:4065348008"> 406-534-8008</a></span>
                     </li>
                     <li>
-                      <span><i class="fa-solid fa-fax"></i><a href="tel:4065348338"> 406-534-8338</a></span>
+                      <span><i class="fa-solid fa-fax contact-icons"></i><a href="tel:4065348338"> 406-534-8338</a></span>
                     </li>
                     <li>
-                      <span><i class="fa-solid fa-envelope"></i><a href="mailto: jennifer@jminsgroup.com"> jennifer@jminsgroup.com</a></span>
+                      <span><i class="fa-solid fa-envelope contact-icons"></i><a href="mailto: jennifer@jminsgroup.com"> jennifer@jminsgroup.com</a></span>
                     </li>
                     <li>
-                      <i class="fa-brands fa-facebook" alt="facebook"></i><a href="https://www.facebook.com/jminsurancegroup"> Facebook</a>
+                      <span><i class="fa-brands fa-facebook contact-icons" alt="facebook"></i><a href="https://www.facebook.com/jminsurancegroup"> Facebook</a></span>
                     </li>
                     <li>
-                      <i class="fa-brands fa-linkedin" alt="linked in"></i><a href="https://www.linkedin.com/company/jminsurancebillings/"> LinkedIn</a>
+                      <span><i class="fa-brands fa-linkedin contact-icons" alt="linked in"></i><a href="https://www.linkedin.com/company/jminsurancebillings/"> LinkedIn</a></span>
                     </li>
                   </ul>
                 </div>
-              
-                <div>
-                  <h3 class="center">Address</h3>
-                    <ul>
-                      <li>JM Insurance Group</li>
-                      <li>111 Main Street, Suite 6</li>
-                      <li>Billings, MT 59105</li>
-                    </ul>
-                  </div>
             </div>
           </div>
         </section>
