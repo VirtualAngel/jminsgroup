@@ -49,6 +49,10 @@ h3 {
     margin-bottom: 1em;
 }
 
+h2 {
+   text-transform: uppercase;
+}
+
 .welcome h1 {
     color: var(--dark-blue);
     font-size: 3rem;
@@ -114,7 +118,8 @@ img {
 .top-bar ul {
     list-style: none;
     display: flex;
-    margin-right: 3rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
 }
 
 .top-bar li {
@@ -139,7 +144,7 @@ img {
 
 .top-bar .fa-solid {
     margin-right: .5rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .top-bar .fa-brands {
@@ -148,6 +153,9 @@ img {
 
 
 /* Navigation */
+.container-fluid {
+    margin-bottom: .2rem;
+}
 
 .navbar {
     background-color: var(--white);
@@ -168,6 +176,7 @@ img {
 .navbar-nav {
     gap: .5rem;
     margin-right: 5rem;
+    margin-top: -1rem;
     text-align: center;
 }
 
@@ -272,6 +281,24 @@ img {
     margin-left: 3rem;
 }
 
+/* Meet the Team Section */
+.left-side {
+    max-width: 15%;
+    margin-left: 3rem;
+}
+
+.right-side {
+    max-width: 75%;
+    padding-left: 2rem;
+    margin-right: 3rem;
+}
+
+/* Community and News Section */
+figcaption {
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
 /* Contact Section */
 .split-contact {
     display: flex;
@@ -362,9 +389,26 @@ img {
         margin: 0;
     }
 
+    .button a {
+        margin-inline: auto;
+        max-width: 10rem;
+ 
+    }
+
     .truck-mascot{
         margin-top: 2rem;
     }
+
+    .left-side {
+        margin-inline: auto;
+     }
+
+    .right-side {
+        margin-inline: auto;
+        padding: 0;
+    }
+
+
     .split-contact {
         flex-direction: column;
         justify-content: center;
