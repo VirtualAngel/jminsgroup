@@ -15,6 +15,11 @@
     --ff-accent: 'Raleway', sans-serif;
 }
 
+*::selection {
+    background: var(--dark-blue);
+    color: var(--white);
+  }
+
 *,
 *::before,
 *::after {
@@ -280,12 +285,12 @@ img {
 }
 
 /* Meet the Team Section */
-.left-side {
+.img-side {
     max-width: 15%;
     margin-left: 3rem;
 }
 
-.right-side {
+.content-side {
     max-width: 75%;
     padding-left: 2rem;
     margin-right: 3rem;
@@ -300,6 +305,149 @@ img {
 figcaption {
     margin-top: .3rem;
     margin-bottom: 1rem;
+}
+
+/* Request Quote Section */
+.form-container {
+    max-width: 1100px;
+    width: 100%;
+    margin-inline: auto;
+    background-color: var(--light-grey);
+    padding: 0 5rem;
+}
+
+.form-container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 1.3rem;
+    width: calc(100% / 2 - 1.2rem);
+}
+
+.user-details .input-box .details {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: .4rem;
+    display: block;
+}
+
+.user-details .input-box input {
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    border-radius: .3rem;
+    border: .1rem solid var(--black);
+    border-bottom-width: .2rem;
+    transition: all 0.3s ease-in;
+}
+
+.form-box {
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    border-radius: .3rem;
+    border: .1rem solid var(--black);
+    border-bottom-width: .2rem;
+    transition: all 0.3s ease-in;
+}
+
+.insurance-details {
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.insurance-details h3 {
+    margin-bottom: 1.3rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--blue);
+}
+
+.form-checkbox {
+    width: 100%;
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: .3rem;
+    cursor: pointer;
+}
+
+.form-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--dark-grey);
+}
+
+.form-checkbox:hover input ~ .checkmark {
+    background-color: var(--white);
+}
+
+.form-checkbox:hover input ~ .checkmark {
+    background-color: var(--white);
+}
+
+.form-checkbox input:checked ~ .checkmark {
+    background-color: var(--blue);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.form-checkbox .checkmark:after {
+    left: 9px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+.form-button {
+    height: 2.5rem;
+    width: 15rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    border-style: outset;
+    border-color: var(--black);
+    border-radius: .5rem;
+}
+
+.form-button:hover {
+    background-color: var(--blue);
+    border-color: var(--dark-blue);
+}
+
+.form-button:focus {
+    background-color: var(--blue);
+    border-color: var(--dark-blue);
 }
 
 /* Contact Section */
@@ -402,13 +550,13 @@ figcaption {
         margin-top: 2rem;
     }
 
-    .left-side {
+    .img-side {
         margin-inline: auto;
         max-width: 50%;
         margin-bottom: 2rem;
      }
 
-    .right-side {
+    .content-side {
         margin-inline: auto;
         padding: 0;
     }
@@ -422,7 +570,7 @@ figcaption {
 
     .contact-info {
         margin-left: 0;
-        margin-top: -.3rem;
+        margin-top: 1rem;
     }
 
     .address {
@@ -444,4 +592,5 @@ figcaption {
     .truck-mascot{
         margin-top: 5rem;
     }
+
 }
