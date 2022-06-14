@@ -233,8 +233,6 @@ img {
     background-color: var(--light-grey);
 }
 
-
-
 /* welcome section */
 .welcome {
     background-image: url("../assets/main_image3.png");
@@ -291,6 +289,11 @@ img {
     max-width: 75%;
     padding-left: 2rem;
     margin-right: 3rem;
+}
+
+.employee-img {
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem 0 rgba(22, 22, 24, .5);
 }
 
 /* Community and News Section */
@@ -401,6 +404,8 @@ figcaption {
 
     .left-side {
         margin-inline: auto;
+        max-width: 50%;
+        margin-bottom: 2rem;
      }
 
     .right-side {
