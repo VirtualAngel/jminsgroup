@@ -576,6 +576,22 @@ form .user-details .input-box {
 /* media queries */
 /* Mid/Tablet Screens */
 @media all and (max-width: 62em) {
+    
+    .top-bar {
+        padding: 0;
+    }
+    .top-bar .fa-solid {
+        margin-right: .5rem;
+        margin-left: 1rem;
+    }
+    
+    .top-bar .fa-brands {
+        margin-right: .3rem;
+    }
+
+    .top-bar ul {
+        margin: .2rem;
+    }
     .top-bar a {
         font-size: 1rem;
     }
