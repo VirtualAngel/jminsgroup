@@ -543,7 +543,6 @@ form .user-details .input-box {
     .button a {
         margin-inline: auto;
         max-width: 10rem;
- 
     }
 
     .truck-mascot{
@@ -561,6 +560,14 @@ form .user-details .input-box {
         padding: 0;
     }
 
+    .form-container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 1.3rem;
+        width: 100%;
+    }
 
     .split-contact {
         flex-direction: column;
