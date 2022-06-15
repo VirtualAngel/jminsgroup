@@ -16,7 +16,7 @@
 }
 
 *::selection {
-    background: var(--dark-blue);
+    background: var(--blue);
     color: var(--white);
   }
 
@@ -285,7 +285,7 @@ img {
 
 .truck-mascot {
     margin-top: 2em;
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 /* Meet the Team Section */
@@ -592,6 +592,15 @@ form .user-details .input-box {
     .button a {
         margin-inline: auto;
         max-width: 10rem;
+    }
+
+    .overlay {
+        margin: 0;
+        padding: 0;
+    }
+
+    .greeting {
+        font-size: 2rem;
     }
 
     .truck-mascot{
