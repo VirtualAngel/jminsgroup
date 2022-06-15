@@ -559,16 +559,29 @@ form .user-details .input-box {
 .page-container {
     position: relative;
     min-height: 100vh;
-  }
+    line-height: 1.3rem;
+}
   
 .content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
-  
+    padding-bottom: 2.5rem;    
+}
+
+.submission-success  {
+    font-size: 1.3rem;
+}
+
+.submission-success h1  {
+    font-size: 3rem;
+    color: var(--dark-blue);
+}
+
+.submission-success h3  {
+    font-size: 1.5rem;
+    color: var(--blue);
+}
 
 
 /* media queries */
-
 /* Mid/Tablet Screens */
 @media all and (max-width: 62em) {
 
