@@ -254,10 +254,7 @@ img {
     padding: 2rem;
     width: 100%;
 }
-
-.about-agency {
-    background-color: var(--white);
-}
+/* About Section */
 
 .greeting {
     width: 100%;
@@ -281,11 +278,6 @@ img {
 .request-quote {
     color: var(--blue);
     font-style: italic;
-}
-
-.truck-mascot {
-    margin-top: 2em;
-    margin-left: 4rem;
 }
 
 /* Meet the Team Section */
@@ -584,7 +576,10 @@ form .user-details .input-box {
 /* media queries */
 /* Mid/Tablet Screens */
 @media all and (max-width: 62em) {
-
+    .top-bar a {
+        font-size: 1rem;
+    }
+    
     .logo {
         margin: 0;
     }
@@ -601,10 +596,6 @@ form .user-details .input-box {
 
     .greeting {
         font-size: 2rem;
-    }
-
-    .truck-mascot{
-        margin-top: 2rem;
     }
 
     .img-side {
