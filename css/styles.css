@@ -40,6 +40,10 @@ body {
     line-height: .7rem;
 }
 
+main {
+    background-color: var(--light-grey);
+}
+
 section {
     padding: 3rem 2rem;
     min-width: 100%;
@@ -450,6 +454,26 @@ form .user-details .input-box {
     border-color: var(--dark-blue);
 }
 
+
+/* Form Submission Page */
+
+.form-submission {
+    background-color: var(--light-grey);
+    font-size: 1.5rem;
+}
+
+.submission-success {
+    margin-inline: auto;
+    width: 50%;
+}
+
+.return-button {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
 /* Contact Section */
 .split-contact {
     display: flex;
@@ -531,6 +555,23 @@ form .user-details .input-box {
     color: var(--black);
 }
 
+/* Footer for Submission Page */
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+.content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
+
 /* media queries */
 
 /* Mid/Tablet Screens */
@@ -569,6 +610,15 @@ form .user-details .input-box {
     form .user-details .input-box {
         margin-bottom: 1.3rem;
         width: 100%;
+        font-size: 1rem;
+    }
+
+    .form-submission {
+        font-size: 1rem;
+    }
+    
+    .submission-success {
+        width: 100%;
     }
 
     .split-contact {
@@ -586,6 +636,8 @@ form .user-details .input-box {
         margin-left: -4rem;
         margin-top: 1.5rem;
     }
+
+    
 }
 
 

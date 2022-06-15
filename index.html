@@ -23,12 +23,12 @@
     <nav class="navbar sticky-top navbar-expand-lg py-0">
         <div class="container-fluid">
           <a class="navbar-brand logo" href="#"><img src="assets/transparent_logo_sm.png" alt="jm insurance logo"></a>
-          <button class="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav" 
-          aria-controls="navbarNav" 
-          aria-expanded="false" 
+          <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
           aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,7 +56,7 @@
           </div>
         </div>
       </nav>
-      
+
       <main>
         <section class="welcome text-center">
             <div class="section-container container--narrow">
@@ -73,7 +73,7 @@
           <div class="section-container">
             <h2 class="text-center">We've got you covered!</h2>
             <p class="text-center catch-phrase">We are committed to great customer satisfaction. Stop by and visit, call us, or <a href="#quote"><span class="request-quote">request a quote</span></a> today!</p>
-            
+
             <div class="split">
               <div class="right-side">
                 <p>JM Insurance Group specializes in writing home, renters, landlord, auto, umbrella, motorcycles, ATV's boats or any other toys or unique items you may own. We have several types of personal insurance to cover all of your individual circumstances.</p>
@@ -81,10 +81,10 @@
                 <p>Understanding insurance can be quite complicated and at JM Insurance Group we believe in explaining the options to you so you can make an educated decision on the route you would like to pursue. We encourage a face to face visit for the initial meeting to explain coverage and address any gaps in insurance you may have. We will do a periodic review every couple years since life happens and things change.</p>
                 <p>The companies we represent are great at handling claims. However, the claims experience can be confusing and we are here to help guide you throughout the process.</p>
               </div>
-            
+
               <div class="truck-mascot"><img src="/assets/truck_with_logo_thumbnail.png" alt="Old, blue truck with JM Insurance Group logo on door"></div>
             </div>
-          </div>      
+          </div>
         </section>
 
         <!-- Meet us section -->
@@ -92,7 +92,7 @@
           <div class="section-container">
             <h2 class="text-center">Meet Our Team</h2>
             <div class="split">
-              <div class="img-side"><img src="/assets/Employees/JenniferMassey.jpg" alt="picture of jennifer massey" class="employee-img" width="170"></div>                
+              <div class="img-side"><img src="/assets/Employees/JenniferMassey.jpg" alt="picture of jennifer massey" class="employee-img" width="170"></div>
               <div class="content-side">
                 <h3>Jennifer</h3>
                 <p>“In 2017, I started my new agency. In just a short time, it has grown from one employee to several employees. My passion is to save clients money and get them the best insurance policy tailored to their situations. Choosing the right insurance agent can make a big difference in price, service and headaches!” </p>
@@ -144,7 +144,7 @@
                 <p>During the mid-90's, Joni managed multifamily properties in Portland. While there, she worked for a builder and aided in renting new apartments by finding acceptable tenants. In addition, Joni trained other managers to be successful in rental retention using strong screening criteria.</p>
                 <p>For the past fifteen years, Joni switched gears, working in the medical field as a respiratory therapist. But, it was time to get back to her business roots. After purchasing her house three years ago, she was impressed with a homeowner's policy experience which led to her new interest: insurance. </p>
               </div>
-            </div>                    
+            </div>
           </div>
         </section>
         <!-- Community and news section -->
@@ -259,7 +259,7 @@
         <!-- Quote Request -->
         <section id="quote" class="bg-grey">
           <h2 class="text-center">Request a Quote</h2>
-          <div class="form-container">            
+          <div class="form-container">
             <form action="https://formsubmit.co/3a67184d26758ec10be97820ab6aee36" method="POST">
 
               <div class="user-details">
@@ -268,7 +268,9 @@
                 <!-- Disable -->
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="New email from JM Insurance Group's site!">
-                
+                <!-- Link to submission page -->
+                <input type="hidden" name="_next" value="http://jminsgroup.com/submission.html">
+
                 <div class="input-box">
                   <label class="details" for="fullName">Full Name (Required)</label>
                   <input type="text" id="fullName" name="Full Name" placeholder="Enter Full Name" required>
@@ -288,7 +290,7 @@
                     <option value="Mailing_Address">Mailing Address</option>
                     <option value="Phyical_and_Mailing_Address">Physical and Mailing Address</option>
                   </select>
-                </div>                  
+                </div>
                 <div class="input-box">
                   <label class="details" for="city">City (Required)</label>
                   <input type="text" id="city" name="City" placeholder="Enter City" required>
@@ -299,12 +301,12 @@
                     <option value="MT">Montana</option>
                     <option value="WY">Wyoming</option>
                   </select>
-                </div>                    
+                </div>
                 <div class="input-box">
                   <label class="details" for="phone">Phone number (Required)</label>
                   <input type="tel" id="phone" name="Phone"
                           required>
-                </div>             
+                </div>
                 <div class="input-box">
                   <label class="details" for="preferred_contact">I preferred to be contacted by:</label>
                   <select class="form-box" id="preferred_contact" name="Preferred_Contact_Method">
@@ -315,7 +317,7 @@
                   </select>
                 </div>
               </div>
-                                         
+
                 <div class="insurance-details">
                   <h3>Which insurance(s) are you interested in?</h3>
                       <label class="form-checkbox" for="auto">Auto
@@ -354,7 +356,7 @@
                         <input type="checkbox" id="other" name="Other">
                         <span class="checkmark"></span>
                       </label>
-                </div>              
+                </div>
                 <button class="form-button" type="submit">Request Quote</button>
             </form>
           </div>
