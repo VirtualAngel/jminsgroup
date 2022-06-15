@@ -244,7 +244,7 @@ img {
 
 /* welcome section */
 .welcome {
-    background-image: url("../assets/main_image3.png");
+    background-image: url("../assets/main_image4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -599,6 +599,11 @@ form .user-details .input-box {
     .content-side {
         margin-inline: auto;
         padding: 0;
+    }
+
+    figcaption {
+        margin-inline: auto;
+        font-size: .85rem;
     }
 
     .form-container {
