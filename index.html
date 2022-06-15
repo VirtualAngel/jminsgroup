@@ -260,7 +260,8 @@
         <section id="quote" class="bg-grey">
           <h2 class="text-center">Request a Quote</h2>
           <div class="form-container">            
-            <form action="angela@dev-angela.com" method="POST">
+            <form action="https://formsubmit.co/3a67184d26758ec10be97820ab6aee36" method="POST">
+
               <div class="user-details">
                 <!-- Blocker -->
                 <input type="text" name="_sweeties" style="display: none;">
@@ -270,19 +271,19 @@
                 
                 <div class="input-box">
                   <label class="details" for="fullName">Full Name (Required)</label>
-                  <input type="text" id="fullName" name="Full Name" placeholder="Enter your full name" required>
+                  <input type="text" id="fullName" name="Full Name" placeholder="Enter Full Name" required>
                 </div>
                 <div class="input-box">
                   <label class="details" for="email">Email (Required)</label>
-                  <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                  <input type="email" id="email" name="Email" placeholder="Enter Email" required>
               </div>
                 <div class="input-box">
                   <label class="details" for="address">Address (Required)</label>
-                  <input type="text" id="adress" name="Adress" placeholder="Enter your address" required>
+                  <input type="text" id="adress" name="Adress" placeholder="Enter Address" required>
                 </div>
                 <div class="input-box">
                   <label class="details" for="address-choice">This is my: (Required)</label>
-                  <select class="form-box" id="state" name="State" required>
+                  <select class="form-box" id="state" name="Address_Option" required>
                     <option value="Physical_Address">Physical Address</option>
                     <option value="Mailing_Address">Mailing Address</option>
                     <option value="Phyical_and_Mailing_Address">Physical and Mailing Address</option>
@@ -290,7 +291,7 @@
                 </div>                  
                 <div class="input-box">
                   <label class="details" for="city">City (Required)</label>
-                  <input type="text" id="city" name="City" placeholder="Enter your city" required>
+                  <input type="text" id="city" name="City" placeholder="Enter City" required>
                 </div>
                 <div class="input-box">
                   <label class="details" for="state">Choose a State (Required)</label>
@@ -302,8 +303,6 @@
                 <div class="input-box">
                   <label class="details" for="phone">Phone number (Required)</label>
                   <input type="tel" id="phone" name="Phone"
-                          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                          placeholder="Format: 123-456-7890"
                           required>
                 </div>             
                 <div class="input-box">
@@ -355,8 +354,7 @@
                         <input type="checkbox" id="other" name="Other">
                         <span class="checkmark"></span>
                       </label>
-                </div>
-              
+                </div>              
                 <button class="form-button" type="submit">Request Quote</button>
             </form>
           </div>
