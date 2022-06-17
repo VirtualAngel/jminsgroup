@@ -255,6 +255,7 @@ nav.navbar {
     max-width: 100%;
     background-color: rgba(252, 249, 239, 0.6);
     box-shadow: 5px 5px 15px var(--black);
+    border-radius: 1rem;
 }
 /* About Section */
 
