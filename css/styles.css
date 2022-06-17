@@ -252,7 +252,9 @@ nav.navbar {
 .overlay {
     background-color: rgba(252, 249, 239, 0.1);
     padding: 2rem;
-    width: 100%;
+    max-width: 100%;
+    background-color: rgba(252, 249, 239, 0.6);
+    box-shadow: 5px 5px 15px var(--black);
 }
 /* About Section */
 
@@ -262,8 +264,6 @@ nav.navbar {
     padding: .5rem;
     color: var(--dark-blue);
     text-align: center;
-    background-color: rgba(252, 249, 239, 0.6);
-    box-shadow: 5px 5px 15px var(--black);
 }
 
 .catch-phrase {
