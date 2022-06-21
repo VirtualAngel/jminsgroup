@@ -168,6 +168,7 @@ img {
 
 nav.navbar {
     background-color: var(--white);
+    border-bottom: .2rem solid rgb(22, 22, 24, 0.8);
 }
 
 .navbar a {
