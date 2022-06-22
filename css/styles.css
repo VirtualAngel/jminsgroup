@@ -6,7 +6,7 @@
 :root {
     --white: rgb(252, 249, 239);
     --light-grey: hsl(51, 8%, 82%);
-    --dark-grey: hsl(60, 1%, 21%);
+    --dark-grey: rgb(54, 54, 53);
     --blue: #00588f;
     --dark-blue: #0f1d4d;
     --black: rgb(22, 22, 24);
@@ -50,6 +50,10 @@ section {
     max-width: 70.5rem;
 }
 
+.section-break {
+
+}
+
 h1,
 h2,
 h3 {
@@ -89,6 +93,7 @@ img {
 
 .section-container {
     margin-inline: auto;
+    margin-top: 1rem;
 }
 
 .split {
