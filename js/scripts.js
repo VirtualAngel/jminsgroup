@@ -1,3 +1,3 @@
-var date = new Date();
-var year = date.getFullYear();
+let date = new Date();
+let year = date.getFullYear();
 document.getElementById("currentYear").innerHTML = year;
