@@ -5,10 +5,10 @@
 
 :root {
     --white: rgb(252, 249, 239);
-    --light-grey: hsl(51, 8%, 82%);
+    --light-grey: rgb(213, 212, 205);
     --dark-grey: rgb(54, 54, 53);
-    --blue: #00588f;
-    --dark-blue: #0f1d4d;
+    --blue: rgb(0, 88, 143);
+    --dark-blue: rgb(15, 29, 77);
     --black: rgb(22, 22, 24);
 
     --ff-primary: 'Barlow', sans-serif;
@@ -50,9 +50,7 @@ section {
     max-width: 70.5rem;
 }
 
-.section-break {
 
-}
 
 h1,
 h2,
