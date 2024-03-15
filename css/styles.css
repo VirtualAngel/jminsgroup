@@ -395,18 +395,18 @@ form .user-details .input-box {
     height: 1.5rem;
     width: 1.5rem;
     background-color: var(--dark-grey);
+    border-radius: 15px;
 }
 
 .form-checkbox:hover input ~ .checkmark {
-    background-color: var(--white);
-}
-
-.form-checkbox:hover input ~ .checkmark {
-    background-color: var(--white);
+    background-color: var(--light-grey);
+    border: solid var(--blue);
+    border-radius: 15px;
 }
 
 .form-checkbox input:checked ~ .checkmark {
     background-color: var(--blue);
+    border-radius: 15px;
 }
 
 .checkmark:after {
